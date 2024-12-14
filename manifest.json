@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Hunet Auto Clicker ver.1-dev",
+    "version": "1.0-dev",
+    "description": "Non-touch process on the hunet platform.",
+    "content_scripts": [
+      {
+        "matches": ["https://study.hunet.co.kr/Study/*"],
+        "js": ["clickerScript.js"],
+        "run_at": "document_end",
+        "all_frames": true
+      }
+    ],
+    "permissions": ["activeTab", "tabs", "webNavigation"]
+  }
+  
